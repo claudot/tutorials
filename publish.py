@@ -11,8 +11,8 @@ FILE_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 OUT_PATH = os.path.join(FILE_DIR, 'out')
 SRC_PATH = os.path.join(FILE_DIR, 'app')
 
-REPOSITORY = 'git@github.com:craft-ai/tutorials.git'
-BRANCH = 'gh-pages'
+REPOSITORY = 'git@github.com:claudot/tutorials.git'
+BRANCH = 'master'
 
 def main():
     print "Publishing craft ai tutorials, to '{}/{}'.".format(REPOSITORY, BRANCH)
