@@ -19,6 +19,20 @@
           {
             "activated": true,
             "metadata": {
+              "label": "action1"
+            },
+            "properties": {
+              "name": "",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "69a21221-c60f-4518-a02b-8cac2b64959e",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
               "label": "Optin ?"
             },
             "properties": {
