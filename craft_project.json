@@ -3,7 +3,10 @@
     "version": "0.0.1"
   },
   {
-    "homeUrl": "",
-    "description": ""
+    "homeUrl": "test",
+    "description": "test craft",
+    "actionLibraries": {
+      "google": false
+    }
   }
 ]
