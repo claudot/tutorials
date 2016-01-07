@@ -15,7 +15,28 @@
           "label": ""
         },
         "properties": {},
-        "children": [],
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Optin ?"
+            },
+            "properties": {
+              "op1": {
+                "type": "globalKnowledge",
+                "value": "true"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
+            },
+            "children": [],
+            "id": "b700bcfa-ad3c-40a2-9243-f6861add0505",
+            "type": "condition"
+          }
+        ],
         "id": "4d0a7b23-f43a-4e21-9627-2f5022e226ad",
         "type": "sequence"
       }
