@@ -14,66 +14,79 @@
         "metadata": {
           "label": ""
         },
-        "properties": {},
+        "properties": {
+          "active": "false"
+        },
         "children": [
           {
             "activated": true,
             "metadata": {
-              "label": "action1"
+              "label": "optin"
             },
             "properties": {
-              "name": "",
-              "inputParams": [],
-              "outputParams": []
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "optin"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
             },
             "children": [],
-            "id": "69a21221-c60f-4518-a02b-8cac2b64959e",
-            "type": "action"
+            "id": "2331a546-a923-448b-af1b-6fa685bddba3",
+            "type": "condition"
           },
           {
             "activated": true,
             "metadata": {
-              "label": "Optin ?"
+              "label": "optin"
             },
             "properties": {
               "op1": {
-                "type": "globalKnowledge",
-                "value": "true"
+                "type": "entityKnowledge",
+                "value": "try"
               },
               "op2": {
-                "type": "real",
+                "type": "integer",
                 "value": "3"
               },
-              "op": "=="
+              "op": ">="
             },
             "children": [
               {
                 "activated": true,
                 "metadata": {
-                  "label": ""
+                  "label": "Consultation Messagerie"
                 },
                 "properties": {
-                  "op1": {
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  "op2": {
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  "op": "=="
+                  "name": "consultation_messagerie",
+                  "inputParams": [
+                    {
+                      "type": "string",
+                      "value": ""
+                    }
+                  ],
+                  "outputParams": [
+                    {
+                      "key": "try",
+                      "type": "entityKnowledge",
+                      "value": "try"
+                    }
+                  ]
                 },
                 "children": [],
-                "id": "bf29f68b-6e51-4c16-b547-64b7ffb89538",
-                "type": "condition"
+                "id": "fb7d00e1-5a2d-4528-8ccf-7404c3a0069f",
+                "type": "action"
               }
             ],
-            "id": "b700bcfa-ad3c-40a2-9243-f6861add0505",
-            "type": "condition"
+            "id": "ad0bf23e-8a55-4de2-a7a2-d1d0a0600c1b",
+            "type": "until"
           }
         ],
-        "id": "4d0a7b23-f43a-4e21-9627-2f5022e226ad",
-        "type": "sequence"
+        "id": "425cdf7b-d6de-419a-973e-137c3ceb6b83",
+        "type": "priority"
       }
     ],
     "id": "3ec4581b-d016-47eb-bf26-2af1517b9974"
