@@ -41,12 +41,33 @@
                 "value": "true"
               },
               "op2": {
-                "type": "boolean",
-                "value": "true"
+                "type": "real",
+                "value": "3"
               },
               "op": "=="
             },
-            "children": [],
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "op1": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op2": {
+                    "type": "boolean",
+                    "value": "true"
+                  },
+                  "op": "=="
+                },
+                "children": [],
+                "id": "bf29f68b-6e51-4c16-b547-64b7ffb89538",
+                "type": "condition"
+              }
+            ],
             "id": "b700bcfa-ad3c-40a2-9243-f6861add0505",
             "type": "condition"
           }
