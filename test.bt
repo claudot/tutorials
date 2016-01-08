@@ -41,48 +41,73 @@
           {
             "activated": true,
             "metadata": {
-              "label": "optin"
+              "label": ""
             },
-            "properties": {
-              "op1": {
-                "type": "entityKnowledge",
-                "value": "try"
-              },
-              "op2": {
-                "type": "integer",
-                "value": "3"
-              },
-              "op": ">="
-            },
+            "properties": {},
             "children": [
               {
                 "activated": true,
                 "metadata": {
-                  "label": "Consultation Messagerie"
+                  "label": "optin"
                 },
                 "properties": {
-                  "name": "consultation_messagerie",
-                  "inputParams": [
-                    {
-                      "type": "string",
-                      "value": ""
-                    }
-                  ],
-                  "outputParams": [
-                    {
-                      "key": "try",
-                      "type": "entityKnowledge",
-                      "value": "try"
-                    }
-                  ]
+                  "op1": {
+                    "type": "entityKnowledge",
+                    "value": "try"
+                  },
+                  "op2": {
+                    "type": "integer",
+                    "value": "3"
+                  },
+                  "op": ">="
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "Consultation Messagerie"
+                    },
+                    "properties": {
+                      "name": "consultation_messagerie",
+                      "inputParams": [
+                        {
+                          "type": "string",
+                          "value": ""
+                        }
+                      ],
+                      "outputParams": [
+                        {
+                          "key": "try",
+                          "type": "entityKnowledge",
+                          "value": "try"
+                        }
+                      ]
+                    },
+                    "children": [],
+                    "id": "fb7d00e1-5a2d-4528-8ccf-7404c3a0069f",
+                    "type": "action"
+                  }
+                ],
+                "id": "ad0bf23e-8a55-4de2-a7a2-d1d0a0600c1b",
+                "type": "until"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "Presentation de l'optin"
+                },
+                "properties": {
+                  "name": "present_optin",
+                  "inputParams": [],
+                  "outputParams": []
                 },
                 "children": [],
-                "id": "fb7d00e1-5a2d-4528-8ccf-7404c3a0069f",
+                "id": "a00f4cb5-20ee-4664-8372-60ae41847c06",
                 "type": "action"
               }
             ],
-            "id": "ad0bf23e-8a55-4de2-a7a2-d1d0a0600c1b",
-            "type": "until"
+            "id": "aeffb21e-f60c-4314-8e75-e0b740a47710",
+            "type": "sequence"
           }
         ],
         "id": "425cdf7b-d6de-419a-973e-137c3ceb6b83",
