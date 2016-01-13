@@ -14,19 +14,33 @@
         "metadata": {
           "label": ""
         },
-        "properties": {
-          "active": "false"
-        },
+        "properties": {},
         "children": [
           {
             "activated": true,
             "metadata": {
-              "label": "optin"
+              "label": "Init"
+            },
+            "properties": {
+              "destination": "hasBeenPresented",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
+            },
+            "children": [],
+            "id": "c23da369-6223-4f27-a974-7c084ad07d99",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
             },
             "properties": {
               "op1": {
-                "type": "entityKnowledge",
-                "value": "optin"
+                "type": "boolean",
+                "value": "false"
               },
               "op2": {
                 "type": "boolean",
@@ -34,84 +48,129 @@
               },
               "op": "=="
             },
-            "children": [],
-            "id": "2331a546-a923-448b-af1b-6fa685bddba3",
-            "type": "condition"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {},
             "children": [
               {
                 "activated": true,
                 "metadata": {
-                  "label": "optin"
+                  "label": ""
                 },
                 "properties": {
-                  "op1": {
-                    "type": "entityKnowledge",
-                    "value": "try"
-                  },
-                  "op2": {
-                    "type": "integer",
-                    "value": "3"
-                  },
-                  "op": ">="
+                  "active": "false"
                 },
                 "children": [
                   {
                     "activated": true,
                     "metadata": {
-                      "label": "Consultation Messagerie"
+                      "label": "optin"
                     },
                     "properties": {
-                      "name": "consultation_messagerie",
-                      "inputParams": [
-                        {
-                          "type": "string",
-                          "value": ""
-                        }
-                      ],
-                      "outputParams": [
-                        {
-                          "key": "try",
-                          "type": "entityKnowledge",
-                          "value": "try"
-                        }
-                      ]
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "optin"
+                      },
+                      "op2": {
+                        "type": "boolean",
+                        "value": "true"
+                      },
+                      "op": "=="
                     },
                     "children": [],
-                    "id": "fb7d00e1-5a2d-4528-8ccf-7404c3a0069f",
-                    "type": "action"
+                    "id": "2331a546-a923-448b-af1b-6fa685bddba3",
+                    "type": "condition"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "op1": {
+                        "type": "entityKnowledge",
+                        "value": "hasBeenPresented"
+                      },
+                      "op2": {
+                        "type": "boolean",
+                        "value": "false"
+                      },
+                      "op": "=="
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "op1": {
+                                "type": "entityKnowledge",
+                                "value": "try"
+                              },
+                              "op2": {
+                                "type": "integer",
+                                "value": "3"
+                              },
+                              "op": ">="
+                            },
+                            "children": [],
+                            "id": "4d5bb915-3302-48c2-87d3-1861f0c8688a",
+                            "type": "condition"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": "Presentation de l'optin"
+                            },
+                            "properties": {
+                              "name": "present_optin",
+                              "inputParams": [],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "a00f4cb5-20ee-4664-8372-60ae41847c06",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "destination": "hasBeenPresented",
+                              "op": {
+                                "type": "boolean",
+                                "value": "true"
+                              }
+                            },
+                            "children": [],
+                            "id": "350f9432-e9b3-46b8-bffc-7bf93c1c5d95",
+                            "type": "set"
+                          }
+                        ],
+                        "id": "aeffb21e-f60c-4314-8e75-e0b740a47710",
+                        "type": "sequence"
+                      }
+                    ],
+                    "id": "c9c686aa-f5a3-4558-93e6-effdcc8c025c",
+                    "type": "condition"
                   }
                 ],
-                "id": "ad0bf23e-8a55-4de2-a7a2-d1d0a0600c1b",
-                "type": "until"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "Presentation de l'optin"
-                },
-                "properties": {
-                  "name": "present_optin",
-                  "inputParams": [],
-                  "outputParams": []
-                },
-                "children": [],
-                "id": "a00f4cb5-20ee-4664-8372-60ae41847c06",
-                "type": "action"
+                "id": "425cdf7b-d6de-419a-973e-137c3ceb6b83",
+                "type": "priority"
               }
             ],
-            "id": "aeffb21e-f60c-4314-8e75-e0b740a47710",
-            "type": "sequence"
+            "id": "975d46c9-a9db-407b-9dd8-cf1bf2be85af",
+            "type": "until"
           }
         ],
-        "id": "425cdf7b-d6de-419a-973e-137c3ceb6b83",
-        "type": "priority"
+        "id": "72ae60e7-e134-41be-a489-38427280672c",
+        "type": "sequence"
       }
     ],
     "id": "3ec4581b-d016-47eb-bf26-2af1517b9974"
