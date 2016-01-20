@@ -19,6 +19,20 @@
           {
             "activated": true,
             "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "present_optin",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "e7835b8e-6ea5-4e89-960d-a6f157447d2c",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
               "label": "Init"
             },
             "properties": {
