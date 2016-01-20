@@ -33,7 +33,7 @@
             "type": "set"
           },
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": ""
             },
@@ -74,7 +74,7 @@
             },
             "properties": {
               "statusCondition": "failsIfAnyFails",
-              "retryPolicy": "propagateToRunning"
+              "retryPolicy": "propagateToAll"
             },
             "children": [
               {
@@ -204,7 +204,7 @@
                 "type": "success"
               },
               {
-                "activated": true,
+                "activated": false,
                 "metadata": {
                   "label": ""
                 },
@@ -260,9 +260,9 @@
                           "value": "time"
                         },
                         {
-                          "key": "day",
+                          "key": "d",
                           "type": "entityKnowledge",
-                          "value": "day"
+                          "value": ""
                         }
                       ],
                       "outputParams": []
