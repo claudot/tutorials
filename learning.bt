@@ -33,7 +33,7 @@
             "type": "set"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": ""
             },
@@ -59,6 +59,11 @@
                   "key": "attributes.day.max",
                   "type": "integer",
                   "value": "6"
+                },
+                {
+                  "key": "modelId",
+                  "type": "string",
+                  "value": "lcl_model"
                 }
               ],
               "outputParams": []
@@ -73,8 +78,15 @@
               "label": ""
             },
             "properties": {
-              "statusCondition": "failsIfAnyFails",
-              "retryPolicy": "propagateToAll"
+              "op1": {
+                "type": "boolean",
+                "value": "false"
+              },
+              "op2": {
+                "type": "boolean",
+                "value": "true"
+              },
+              "op": "=="
             },
             "children": [
               {
@@ -90,53 +102,46 @@
                       "label": ""
                     },
                     "properties": {
-                      "active": "false"
+                      "statusCondition": "failsIfAnyFails",
+                      "retryPolicy": "propagateToAll"
                     },
                     "children": [
                       {
-                        "activated": true,
-                        "metadata": {
-                          "label": "optin"
-                        },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "optin"
-                          },
-                          "op2": {
-                            "type": "boolean",
-                            "value": "true"
-                          },
-                          "op": "=="
-                        },
-                        "children": [],
-                        "id": "2331a546-a923-448b-af1b-6fa685bddba3",
-                        "type": "condition"
-                      },
-                      {
-                        "activated": true,
+                        "activated": false,
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {
-                          "op1": {
-                            "type": "entityKnowledge",
-                            "value": "hasBeenPresented"
-                          },
-                          "op2": {
-                            "type": "boolean",
-                            "value": "false"
-                          },
-                          "op": "=="
-                        },
+                        "properties": {},
                         "children": [
                           {
                             "activated": true,
                             "metadata": {
                               "label": ""
                             },
-                            "properties": {},
+                            "properties": {
+                              "active": "false"
+                            },
                             "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": "optin"
+                                },
+                                "properties": {
+                                  "op1": {
+                                    "type": "entityKnowledge",
+                                    "value": "optin"
+                                  },
+                                  "op2": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  },
+                                  "op": "=="
+                                },
+                                "children": [],
+                                "id": "2331a546-a923-448b-af1b-6fa685bddba3",
+                                "type": "condition"
+                              },
                               {
                                 "activated": true,
                                 "metadata": {
@@ -145,139 +150,171 @@
                                 "properties": {
                                   "op1": {
                                     "type": "entityKnowledge",
-                                    "value": "try"
+                                    "value": "hasBeenPresented"
                                   },
                                   "op2": {
-                                    "type": "integer",
-                                    "value": "3"
-                                  },
-                                  "op": ">="
-                                },
-                                "children": [],
-                                "id": "4d5bb915-3302-48c2-87d3-1861f0c8688a",
-                                "type": "condition"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": "Presentation de l'optin"
-                                },
-                                "properties": {
-                                  "name": "present_optin",
-                                  "inputParams": [],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "a00f4cb5-20ee-4664-8372-60ae41847c06",
-                                "type": "action"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
-                                  "label": ""
-                                },
-                                "properties": {
-                                  "destination": "hasBeenPresented",
-                                  "op": {
                                     "type": "boolean",
-                                    "value": "true"
-                                  }
+                                    "value": "false"
+                                  },
+                                  "op": "=="
                                 },
-                                "children": [],
-                                "id": "350f9432-e9b3-46b8-bffc-7bf93c1c5d95",
-                                "type": "set"
+                                "children": [
+                                  {
+                                    "activated": true,
+                                    "metadata": {
+                                      "label": ""
+                                    },
+                                    "properties": {},
+                                    "children": [
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "op1": {
+                                            "type": "entityKnowledge",
+                                            "value": "try"
+                                          },
+                                          "op2": {
+                                            "type": "integer",
+                                            "value": "3"
+                                          },
+                                          "op": ">="
+                                        },
+                                        "children": [],
+                                        "id": "4d5bb915-3302-48c2-87d3-1861f0c8688a",
+                                        "type": "condition"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": "Presentation de l'optin"
+                                        },
+                                        "properties": {
+                                          "name": "present_optin",
+                                          "inputParams": [],
+                                          "outputParams": []
+                                        },
+                                        "children": [],
+                                        "id": "a00f4cb5-20ee-4664-8372-60ae41847c06",
+                                        "type": "action"
+                                      },
+                                      {
+                                        "activated": true,
+                                        "metadata": {
+                                          "label": ""
+                                        },
+                                        "properties": {
+                                          "destination": "hasBeenPresented",
+                                          "op": {
+                                            "type": "boolean",
+                                            "value": "true"
+                                          }
+                                        },
+                                        "children": [],
+                                        "id": "350f9432-e9b3-46b8-bffc-7bf93c1c5d95",
+                                        "type": "set"
+                                      }
+                                    ],
+                                    "id": "aeffb21e-f60c-4314-8e75-e0b740a47710",
+                                    "type": "sequence"
+                                  }
+                                ],
+                                "id": "c9c686aa-f5a3-4558-93e6-effdcc8c025c",
+                                "type": "condition"
                               }
                             ],
-                            "id": "aeffb21e-f60c-4314-8e75-e0b740a47710",
-                            "type": "sequence"
+                            "id": "425cdf7b-d6de-419a-973e-137c3ceb6b83",
+                            "type": "priority"
                           }
                         ],
-                        "id": "c9c686aa-f5a3-4558-93e6-effdcc8c025c",
-                        "type": "condition"
+                        "id": "aebf4805-6a55-41e9-867f-51aa4ce5b020",
+                        "type": "success"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {},
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "checkTry",
+                              "inputParams": [
+                                {
+                                  "key": "previousCount",
+                                  "type": "entityKnowledge",
+                                  "value": "try"
+                                }
+                              ],
+                              "outputParams": [
+                                {
+                                  "key": "time",
+                                  "type": "entityKnowledge",
+                                  "value": "time"
+                                },
+                                {
+                                  "key": "day",
+                                  "type": "entityKnowledge",
+                                  "value": "day"
+                                },
+                                {
+                                  "key": "count",
+                                  "type": "entityKnowledge",
+                                  "value": "try"
+                                }
+                              ]
+                            },
+                            "children": [],
+                            "id": "78ab8130-a3dd-4f82-af9d-09580383acb4",
+                            "type": "action"
+                          },
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {
+                              "name": "learn",
+                              "inputParams": [
+                                {
+                                  "key": "time",
+                                  "type": "entityKnowledge",
+                                  "value": "time"
+                                },
+                                {
+                                  "key": "d",
+                                  "type": "entityKnowledge",
+                                  "value": ""
+                                }
+                              ],
+                              "outputParams": []
+                            },
+                            "children": [],
+                            "id": "3303eee3-cde0-4c44-8fb9-59cf0762636d",
+                            "type": "action"
+                          }
+                        ],
+                        "id": "08d55850-2dd0-491c-816b-b5fad098e6c6",
+                        "type": "sequence"
                       }
                     ],
-                    "id": "425cdf7b-d6de-419a-973e-137c3ceb6b83",
-                    "type": "priority"
+                    "id": "1d3c2696-3a30-428a-9262-8f2f0d1505b6",
+                    "type": "parallel"
                   }
                 ],
-                "id": "aebf4805-6a55-41e9-867f-51aa4ce5b020",
+                "id": "a9e3a0ef-27a6-49c1-b086-e9e19a7ac049",
                 "type": "success"
-              },
-              {
-                "activated": false,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {},
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "checkTry",
-                      "inputParams": [
-                        {
-                          "key": "previousCount",
-                          "type": "entityKnowledge",
-                          "value": "try"
-                        }
-                      ],
-                      "outputParams": [
-                        {
-                          "key": "time",
-                          "type": "entityKnowledge",
-                          "value": "time"
-                        },
-                        {
-                          "key": "day",
-                          "type": "entityKnowledge",
-                          "value": "day"
-                        },
-                        {
-                          "key": "count",
-                          "type": "entityKnowledge",
-                          "value": "try"
-                        }
-                      ]
-                    },
-                    "children": [],
-                    "id": "78ab8130-a3dd-4f82-af9d-09580383acb4",
-                    "type": "action"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "learn",
-                      "inputParams": [
-                        {
-                          "key": "time",
-                          "type": "entityKnowledge",
-                          "value": "time"
-                        },
-                        {
-                          "key": "d",
-                          "type": "entityKnowledge",
-                          "value": ""
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "3303eee3-cde0-4c44-8fb9-59cf0762636d",
-                    "type": "action"
-                  }
-                ],
-                "id": "08d55850-2dd0-491c-816b-b5fad098e6c6",
-                "type": "sequence"
               }
             ],
-            "id": "1d3c2696-3a30-428a-9262-8f2f0d1505b6",
-            "type": "parallel"
+            "id": "7fe2ed60-cdce-4e5b-a548-b058ebe22e14",
+            "type": "until"
           }
         ],
         "id": "72ae60e7-e134-41be-a489-38427280672c",
