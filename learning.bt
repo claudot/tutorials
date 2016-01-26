@@ -78,6 +78,22 @@
               "label": ""
             },
             "properties": {
+              "destination": "time",
+              "op": {
+                "type": "real",
+                "value": "-1"
+              }
+            },
+            "children": [],
+            "id": "7b2b6ae2-dc31-424f-aee9-df8bf3c44921",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
               "op1": {
                 "type": "boolean",
                 "value": "false"
@@ -101,25 +117,56 @@
                     "metadata": {
                       "label": ""
                     },
-                    "properties": {
-                      "name": "learn",
-                      "inputParams": [
-                        {
-                          "key": "time",
-                          "type": "entityKnowledge",
-                          "value": "time"
+                    "properties": {},
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
                         },
-                        {
-                          "key": "value",
-                          "type": "integer",
-                          "value": "1"
-                        }
-                      ],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "3303eee3-cde0-4c44-8fb9-59cf0762636d",
-                    "type": "action"
+                        "properties": {
+                          "op1": {
+                            "type": "entityKnowledge",
+                            "value": "time"
+                          },
+                          "op2": {
+                            "type": "real",
+                            "value": "-1"
+                          },
+                          "op": "!="
+                        },
+                        "children": [],
+                        "id": "943253d9-6dcd-464d-95cb-a1b240f30d7f",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "name": "learn",
+                          "inputParams": [
+                            {
+                              "key": "time",
+                              "type": "entityKnowledge",
+                              "value": "time"
+                            },
+                            {
+                              "key": "value",
+                              "type": "integer",
+                              "value": "1"
+                            }
+                          ],
+                          "outputParams": []
+                        },
+                        "children": [],
+                        "id": "3303eee3-cde0-4c44-8fb9-59cf0762636d",
+                        "type": "action"
+                      }
+                    ],
+                    "id": "6b894f0e-e05b-466a-8df7-85068981c93e",
+                    "type": "sequence"
                   }
                 ],
                 "id": "a9e3a0ef-27a6-49c1-b086-e9e19a7ac049",
