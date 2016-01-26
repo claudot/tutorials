@@ -49,6 +49,11 @@
                   "key": "modelId",
                   "type": "string",
                   "value": "lcl_model"
+                },
+                {
+                  "key": "classes",
+                  "type": "integer",
+                  "value": "2"
                 }
               ],
               "outputParams": []
