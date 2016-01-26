@@ -46,21 +46,6 @@
                   "value": "continuous"
                 },
                 {
-                  "key": "attributes.day.type",
-                  "type": "string",
-                  "value": "discrete"
-                },
-                {
-                  "key": "attributes.day.min",
-                  "type": "integer",
-                  "value": "0"
-                },
-                {
-                  "key": "attributes.day.max",
-                  "type": "integer",
-                  "value": "6"
-                },
-                {
                   "key": "modelId",
                   "type": "string",
                   "value": "lcl_model"
