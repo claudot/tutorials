@@ -246,9 +246,9 @@
                               "value": "time"
                             },
                             {
-                              "key": "d",
-                              "type": "entityKnowledge",
-                              "value": "try"
+                              "key": "value",
+                              "type": "integer",
+                              "value": "1"
                             }
                           ],
                           "outputParams": []
