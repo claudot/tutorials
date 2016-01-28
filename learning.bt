@@ -52,7 +52,7 @@
               "label": ""
             },
             "properties": {
-              "destination": "time",
+              "destination": "timestamp",
               "op": {
                 "type": "real",
                 "value": "-1"
@@ -94,7 +94,7 @@
                     "properties": {
                       "op1": {
                         "type": "entityKnowledge",
-                        "value": "time"
+                        "value": "timestamp"
                       },
                       "op2": {
                         "type": "real",
@@ -114,7 +114,7 @@
                             {
                               "key": "time",
                               "type": "entityKnowledge",
-                              "value": "time"
+                              "value": "timestamp"
                             },
                             {
                               "key": "value",
