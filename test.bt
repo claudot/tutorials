@@ -108,19 +108,15 @@
                                   "label": ""
                                 },
                                 "properties": {
-                                  "op1": {
-                                    "type": "entityKnowledge",
-                                    "value": "try"
+                                  "behavior": {
+                                    "type": "uriPath",
+                                    "value": "metier.bt"
                                   },
-                                  "op2": {
-                                    "type": "integer",
-                                    "value": "3"
-                                  },
-                                  "op": ">="
+                                  "inputParams": []
                                 },
                                 "children": [],
-                                "id": "4d5bb915-3302-48c2-87d3-1861f0c8688a",
-                                "type": "condition"
+                                "id": "4dfb3047-b482-4bd5-bdb2-9d09aa790453",
+                                "type": "embedded"
                               },
                               {
                                 "activated": true,
