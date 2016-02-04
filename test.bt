@@ -121,20 +121,6 @@
                               {
                                 "activated": true,
                                 "metadata": {
-                                  "label": "Presentation de l'optin"
-                                },
-                                "properties": {
-                                  "name": "present_optin",
-                                  "inputParams": [],
-                                  "outputParams": []
-                                },
-                                "children": [],
-                                "id": "a00f4cb5-20ee-4664-8372-60ae41847c06",
-                                "type": "action"
-                              },
-                              {
-                                "activated": true,
-                                "metadata": {
                                   "label": ""
                                 },
                                 "properties": {
