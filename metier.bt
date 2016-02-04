@@ -12,22 +12,47 @@
       {
         "activated": true,
         "metadata": {
-          "label": "Nombres de visites sur l'application avant de présenter l'optin "
+          "label": ""
         },
-        "properties": {
-          "op1": {
-            "type": "entityKnowledge",
-            "value": "try"
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Nombres de visites sur l'application avant de présenter l'optin "
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "try"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "3"
+              },
+              "op": ">="
+            },
+            "children": [],
+            "id": "0eeb728c-c9cc-40a9-83c1-5d262d1af0fc",
+            "type": "condition"
           },
-          "op2": {
-            "type": "integer",
-            "value": "3"
-          },
-          "op": ">="
-        },
-        "children": [],
-        "id": "0eeb728c-c9cc-40a9-83c1-5d262d1af0fc",
-        "type": "condition"
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "presetnoptin",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "9633a2b8-cb8d-49c4-9810-a0230b89a562",
+            "type": "action"
+          }
+        ],
+        "id": "11a7f53f-a21b-4574-a098-7e61e26975fd",
+        "type": "sequence"
       }
     ],
     "id": "56ef68f3-7277-4c2a-8af5-47d01b238c3b"
