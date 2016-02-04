@@ -28,7 +28,7 @@
               },
               "op2": {
                 "type": "integer",
-                "value": "3"
+                "value": "6"
               },
               "op": ">="
             },
