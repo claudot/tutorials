@@ -39,10 +39,10 @@
           {
             "activated": true,
             "metadata": {
-              "label": ""
+              "label": "Présente l'Optin à l'utilisateur"
             },
             "properties": {
-              "name": "presetnoptin",
+              "name": "present_optin",
               "inputParams": [],
               "outputParams": []
             },
