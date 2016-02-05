@@ -27,7 +27,7 @@
                 {
                   "key": "attributes.time.type",
                   "type": "string",
-                  "value": "continuous"
+                  "value": "timestamp"
                 },
                 {
                   "key": "modelId",
