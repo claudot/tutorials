@@ -35,6 +35,20 @@
             "children": [],
             "id": "af2f618b-4c6e-41b7-895f-67b0ec0476ce",
             "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "present_one_click",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "db3e5967-3b05-4f67-a08e-7f48fa44f6ba",
+            "type": "action"
           }
         ],
         "id": "db09fbd5-b1b0-4b5e-881d-d581c9eaf408",
