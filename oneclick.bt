@@ -101,7 +101,40 @@
                               "label": ""
                             },
                             "properties": {},
-                            "children": [],
+                            "children": [
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "behavior": {
+                                    "type": "uriPath",
+                                    "value": ""
+                                  },
+                                  "inputParams": []
+                                },
+                                "children": [],
+                                "id": "bc4338e1-45f0-4e0e-becb-8c7910aca097",
+                                "type": "embedded"
+                              },
+                              {
+                                "activated": true,
+                                "metadata": {
+                                  "label": ""
+                                },
+                                "properties": {
+                                  "destination": "hasBeenPresented",
+                                  "op": {
+                                    "type": "boolean",
+                                    "value": "true"
+                                  }
+                                },
+                                "children": [],
+                                "id": "f990d58f-b717-43a8-8521-6b858c7f37a5",
+                                "type": "set"
+                              }
+                            ],
                             "id": "5058a091-d29b-4f6b-9c7c-4cf496aa5c83",
                             "type": "sequence"
                           }
