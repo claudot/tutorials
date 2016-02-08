@@ -31,6 +31,19 @@
             "children": [],
             "id": "b2e63838-cdf7-43b5-83e8-d5a2f3744a90",
             "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "statusCondition": "failsIfAnyFails",
+              "retryPolicy": "propagateToRunning"
+            },
+            "children": [],
+            "id": "81e07014-0ffe-476d-8444-ec45ca4ee83d",
+            "type": "parallel"
           }
         ],
         "id": "da2f85b3-aeb0-46ba-b5e0-7a5f4d5dbfa4",
