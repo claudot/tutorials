@@ -48,7 +48,61 @@
                   "label": ""
                 },
                 "properties": {},
-                "children": [],
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "active": "false"
+                    },
+                    "children": [
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [],
+                        "id": "c17e4a7b-b6aa-42e4-9fd6-5f2a2b8164ee",
+                        "type": "condition"
+                      },
+                      {
+                        "activated": true,
+                        "metadata": {
+                          "label": ""
+                        },
+                        "properties": {
+                          "op1": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op2": {
+                            "type": "boolean",
+                            "value": "true"
+                          },
+                          "op": "=="
+                        },
+                        "children": [],
+                        "id": "0daa9144-7461-48b7-aa19-a65d8ff9fe67",
+                        "type": "condition"
+                      }
+                    ],
+                    "id": "08b43d24-1e15-4ad6-b34f-7882afe1221e",
+                    "type": "priority"
+                  }
+                ],
                 "id": "3a638b52-53dc-4409-9ab7-e1fce95946df",
                 "type": "success"
               },
