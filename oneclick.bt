@@ -41,7 +41,34 @@
               "statusCondition": "failsIfAnyFails",
               "retryPolicy": "propagateToRunning"
             },
-            "children": [],
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {},
+                "children": [],
+                "id": "3a638b52-53dc-4409-9ab7-e1fce95946df",
+                "type": "success"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "behavior": {
+                    "type": "uriPath",
+                    "value": "lear"
+                  },
+                  "inputParams": []
+                },
+                "children": [],
+                "id": "5b232256-f950-4197-974a-dbc99d15e29f",
+                "type": "embedded"
+              }
+            ],
             "id": "81e07014-0ffe-476d-8444-ec45ca4ee83d",
             "type": "parallel"
           }
