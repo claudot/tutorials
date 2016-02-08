@@ -65,7 +65,7 @@
                         },
                         "properties": {
                           "op1": {
-                            "type": "globalKnowledge",
+                            "type": "entityKnowledge",
                             "value": "oneClickActivated"
                           },
                           "op2": {
@@ -85,7 +85,7 @@
                         },
                         "properties": {
                           "op1": {
-                            "type": "globalKnowledge",
+                            "type": "entityKnowledge",
                             "value": "hasBeenPresented"
                           },
                           "op2": {
