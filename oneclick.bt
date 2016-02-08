@@ -15,7 +15,24 @@
           "label": ""
         },
         "properties": {},
-        "children": [],
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "La popup a déjà été présentée"
+            },
+            "properties": {
+              "destination": "hasBeenPresented",
+              "op": {
+                "type": "boolean",
+                "value": "false"
+              }
+            },
+            "children": [],
+            "id": "b2e63838-cdf7-43b5-83e8-d5a2f3744a90",
+            "type": "set"
+          }
+        ],
         "id": "da2f85b3-aeb0-46ba-b5e0-7a5f4d5dbfa4",
         "type": "sequence"
       }
