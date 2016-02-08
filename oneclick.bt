@@ -110,7 +110,7 @@
                                 "properties": {
                                   "behavior": {
                                     "type": "uriPath",
-                                    "value": ""
+                                    "value": "metierOneClick"
                                   },
                                   "inputParams": []
                                 },
