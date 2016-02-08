@@ -94,7 +94,18 @@
                           },
                           "op": "=="
                         },
-                        "children": [],
+                        "children": [
+                          {
+                            "activated": true,
+                            "metadata": {
+                              "label": ""
+                            },
+                            "properties": {},
+                            "children": [],
+                            "id": "5058a091-d29b-4f6b-9c7c-4cf496aa5c83",
+                            "type": "sequence"
+                          }
+                        ],
                         "id": "0daa9144-7461-48b7-aa19-a65d8ff9fe67",
                         "type": "condition"
                       }
