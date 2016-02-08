@@ -15,7 +15,28 @@
           "label": ""
         },
         "properties": {},
-        "children": [],
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": "try"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "3"
+              },
+              "op": "<="
+            },
+            "children": [],
+            "id": "af2f618b-4c6e-41b7-895f-67b0ec0476ce",
+            "type": "condition"
+          }
+        ],
         "id": "db09fbd5-b1b0-4b5e-881d-d581c9eaf408",
         "type": "sequence"
       }
