@@ -70,7 +70,7 @@
                           },
                           "op2": {
                             "type": "boolean",
-                            "value": "false"
+                            "value": "true"
                           },
                           "op": "=="
                         },
