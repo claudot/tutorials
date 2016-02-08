@@ -30,7 +30,7 @@
                 "type": "integer",
                 "value": "3"
               },
-              "op": "<="
+              "op": ">="
             },
             "children": [],
             "id": "af2f618b-4c6e-41b7-895f-67b0ec0476ce",
