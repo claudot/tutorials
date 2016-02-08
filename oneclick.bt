@@ -39,7 +39,7 @@
             },
             "properties": {
               "statusCondition": "failsIfAnyFails",
-              "retryPolicy": "propagateToRunning"
+              "retryPolicy": "propagateToAll"
             },
             "children": [
               {
