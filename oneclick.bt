@@ -61,16 +61,16 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "Solde en un click activé ?"
                         },
                         "properties": {
                           "op1": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "globalKnowledge",
+                            "value": "oneClickActivated"
                           },
                           "op2": {
                             "type": "boolean",
-                            "value": "true"
+                            "value": "false"
                           },
                           "op": "=="
                         },
@@ -81,16 +81,16 @@
                       {
                         "activated": true,
                         "metadata": {
-                          "label": ""
+                          "label": "La popup a déjà été présentée ?"
                         },
                         "properties": {
                           "op1": {
-                            "type": "boolean",
-                            "value": "true"
+                            "type": "globalKnowledge",
+                            "value": "hasBeenPresented"
                           },
                           "op2": {
                             "type": "boolean",
-                            "value": "true"
+                            "value": "false"
                           },
                           "op": "=="
                         },
