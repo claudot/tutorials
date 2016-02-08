@@ -60,7 +60,7 @@
                 "properties": {
                   "behavior": {
                     "type": "uriPath",
-                    "value": "lear"
+                    "value": "learning.bt"
                   },
                   "inputParams": []
                 },
