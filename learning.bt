@@ -38,6 +38,11 @@
                   "key": "classes",
                   "type": "integer",
                   "value": "2"
+                },
+                {
+                  "key": "attributes.location.type",
+                  "type": "string",
+                  "value": "categorical"
                 }
               ],
               "outputParams": []
@@ -60,6 +65,22 @@
             },
             "children": [],
             "id": "7b2b6ae2-dc31-424f-aee9-df8bf3c44921",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "destination": "location",
+              "op": {
+                "type": "string",
+                "value": ""
+              }
+            },
+            "children": [],
+            "id": "a3fd61ad-0279-464b-88c1-073ff402c050",
             "type": "set"
           },
           {
@@ -125,9 +146,30 @@
                               "key": "modelId",
                               "type": "string",
                               "value": "lcl_model"
+                            },
+                            {
+                              "key": "location",
+                              "type": "entityKnowledge",
+                              "value": "location"
+                            },
+                            {
+                              "key": "actions",
+                              "type": "entityKnowledge",
+                              "value": "actions"
                             }
                           ],
-                          "outputParams": []
+                          "outputParams": [
+                            {
+                              "key": "error",
+                              "type": "entityKnowledge",
+                              "value": "error"
+                            },
+                            {
+                              "key": "intervals",
+                              "type": "entityKnowledge",
+                              "value": "intervals"
+                            }
+                          ]
                         },
                         "children": [],
                         "id": "3303eee3-cde0-4c44-8fb9-59cf0762636d",
