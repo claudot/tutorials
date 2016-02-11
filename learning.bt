@@ -22,6 +22,22 @@
               "label": ""
             },
             "properties": {
+              "destination": "threshold",
+              "op": {
+                "type": "real",
+                "value": "0.9"
+              }
+            },
+            "children": [],
+            "id": "15b87066-e4a4-4e53-a708-f7faedf2d8ea",
+            "type": "set"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
               "name": "initialize",
               "inputParams": [
                 {
@@ -156,6 +172,11 @@
                               "key": "actions",
                               "type": "entityKnowledge",
                               "value": "actions"
+                            },
+                            {
+                              "key": "threshold",
+                              "type": "entityKnowledge",
+                              "value": "threshold"
                             }
                           ],
                           "outputParams": [
