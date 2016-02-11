@@ -169,11 +169,6 @@
                               "value": "location"
                             },
                             {
-                              "key": "actions",
-                              "type": "entityKnowledge",
-                              "value": "actions"
-                            },
-                            {
                               "key": "threshold",
                               "type": "entityKnowledge",
                               "value": "threshold"
