@@ -172,6 +172,11 @@
                               "key": "threshold",
                               "type": "entityKnowledge",
                               "value": "threshold"
+                            },
+                            {
+                              "key": "actions",
+                              "type": "entityKnowledge",
+                              "value": "actions"
                             }
                           ],
                           "outputParams": [
