@@ -25,7 +25,7 @@
               "destination": "threshold",
               "op": {
                 "type": "real",
-                "value": "0.1"
+                "value": "0"
               }
             },
             "children": [],
