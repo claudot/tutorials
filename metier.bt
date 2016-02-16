@@ -19,26 +19,6 @@
           {
             "activated": true,
             "metadata": {
-              "label": "Nombres de visites sur l'application avant de présenter l'optin "
-            },
-            "properties": {
-              "op1": {
-                "type": "entityKnowledge",
-                "value": "try"
-              },
-              "op2": {
-                "type": "integer",
-                "value": "3"
-              },
-              "op": ">="
-            },
-            "children": [],
-            "id": "0eeb728c-c9cc-40a9-83c1-5d262d1af0fc",
-            "type": "condition"
-          },
-          {
-            "activated": true,
-            "metadata": {
               "label": "Présente l'Optin à l'utilisateur"
             },
             "properties": {
