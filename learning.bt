@@ -145,81 +145,56 @@
                         "metadata": {
                           "label": ""
                         },
-                        "properties": {},
-                        "children": [
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
+                        "properties": {
+                          "name": "learn",
+                          "inputParams": [
+                            {
+                              "key": "time",
+                              "type": "entityKnowledge",
+                              "value": "timestamp"
                             },
-                            "properties": {
-                              "name": "debug",
-                              "inputParams": [],
-                              "outputParams": []
+                            {
+                              "key": "value",
+                              "type": "integer",
+                              "value": "1"
                             },
-                            "children": [],
-                            "id": "6602bbcc-7366-495e-b753-8a32febc2c00",
-                            "type": "action"
-                          },
-                          {
-                            "activated": true,
-                            "metadata": {
-                              "label": ""
+                            {
+                              "key": "modelId",
+                              "type": "string",
+                              "value": "lcl_model"
                             },
-                            "properties": {
-                              "name": "learn",
-                              "inputParams": [
-                                {
-                                  "key": "time",
-                                  "type": "entityKnowledge",
-                                  "value": "timestamp"
-                                },
-                                {
-                                  "key": "value",
-                                  "type": "integer",
-                                  "value": "1"
-                                },
-                                {
-                                  "key": "modelId",
-                                  "type": "string",
-                                  "value": "lcl_model"
-                                },
-                                {
-                                  "key": "location",
-                                  "type": "entityKnowledge",
-                                  "value": "location"
-                                },
-                                {
-                                  "key": "threshold",
-                                  "type": "entityKnowledge",
-                                  "value": "threshold"
-                                },
-                                {
-                                  "key": "actions",
-                                  "type": "entityKnowledge",
-                                  "value": "actions"
-                                }
-                              ],
-                              "outputParams": [
-                                {
-                                  "key": "error",
-                                  "type": "entityKnowledge",
-                                  "value": "error"
-                                },
-                                {
-                                  "key": "intervals",
-                                  "type": "entityKnowledge",
-                                  "value": "intervals"
-                                }
-                              ]
+                            {
+                              "key": "location",
+                              "type": "entityKnowledge",
+                              "value": "location"
                             },
-                            "children": [],
-                            "id": "3303eee3-cde0-4c44-8fb9-59cf0762636d",
-                            "type": "action"
-                          }
-                        ],
-                        "id": "e9b2ee4a-183c-4121-bfe6-01e5f0ecbb91",
-                        "type": "sequence"
+                            {
+                              "key": "threshold",
+                              "type": "entityKnowledge",
+                              "value": "threshold"
+                            },
+                            {
+                              "key": "actions",
+                              "type": "entityKnowledge",
+                              "value": "actions"
+                            }
+                          ],
+                          "outputParams": [
+                            {
+                              "key": "error",
+                              "type": "entityKnowledge",
+                              "value": "error"
+                            },
+                            {
+                              "key": "intervals",
+                              "type": "entityKnowledge",
+                              "value": "intervals"
+                            }
+                          ]
+                        },
+                        "children": [],
+                        "id": "3303eee3-cde0-4c44-8fb9-59cf0762636d",
+                        "type": "action"
                       }
                     ],
                     "id": "943253d9-6dcd-464d-95cb-a1b240f30d7f",
